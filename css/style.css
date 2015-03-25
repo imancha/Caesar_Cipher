@@ -1,0 +1,4 @@
+@import url('bootstrap.min.css');
+
+body{padding:15px 0 15px 0}
+.btn:focus,.btn:active:focus,.btn.active:focus,.btn.focus,.btn.focus:active,.btn.active.focus{text-decoration:none;outline:none;}
