@@ -18,10 +18,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		if(xmlhttp == null){alert ("Your browser does not support AJAX!");return;}
 		xmlhttp.onreadystatechange = function(){
 			if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+				document.getElementById("chiper").value = '';
 				document.getElementById("chiper").value = xmlhttp.responseText;
 			}
 		};
-		xmlhttp.open("GET","./inc/inc.php?encrypt="+document.getElementById("plain").value,true);
+		xmlhttp.open("GET","./inc/encrypt.php?plain="+document.getElementById("plain").value,true);
 		xmlhttp.send(null);
 	});
 	document.getElementById("defresh").addEventListener("click", function(event){
@@ -32,10 +33,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		if(xmlhttp == null){alert ("Your browser does not support AJAX!");return;}
 		xmlhttp.onreadystatechange = function(){
 			if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+				document.getElementById("plain").value = '';
 				document.getElementById("plain").value = xmlhttp.responseText;
 			}
 		};
-		xmlhttp.open("GET","./inc/inc.php?decrypt="+document.getElementById("chiper").value,true);
+		xmlhttp.open("GET","./inc/decrypt.php?chiper="+document.getElementById("chiper").value,true);
 		xmlhttp.send(null);
 	});
 });
