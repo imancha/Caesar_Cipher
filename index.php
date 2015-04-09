@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="">
-		<meta name="author" content="">
+		<meta name="description" content="Encrypt/Decrypt Text">
+		<meta name="author" content="Mohammad Abdul Iman Syah">
 		<link rel="icon" href="favicon.ico">
 
-		<title>Caesar Cipher</title>
+		<title>Encrypt</title>
 
 		<!-- Custom styles for this template -->
 		<link href="css/style.css" rel="stylesheet">
@@ -49,12 +49,12 @@
 						<div class="panel panel-success">
 							<div class="panel-heading">
 								<h3 class="panel-title">
-									<span class="glyphicon glyphicon-paste" aria-hidden="true"></span>&nbsp; Chiper Text
+									<span class="glyphicon glyphicon-paste" aria-hidden="true"></span>&nbsp; Cipher Text
 								</h3>
 							</div>
 							<div class="panel-body">
 								<div class="form-group">
-									<textarea class="form-control" id="chiper" placeholder="Enter Chiper Text . . ." rows="15" autocomplete="off" value=""></textarea>
+									<textarea class="form-control" id="chiper" placeholder="Enter Cipher Text . . ." rows="15" autocomplete="off" value=""></textarea>
 								</div>
 								<div class="pull-left">
 									<button class="btn btn-info" type="button" id="decrypt"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> &nbsp; Decrypt</button>
